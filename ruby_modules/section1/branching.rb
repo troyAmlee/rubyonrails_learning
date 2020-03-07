@@ -19,7 +19,7 @@ def mod(firstNum, secondNum)
 end
 
 print "Welcome to the calculator of wonders. \n"
-puts "Which operation would you like to perform today? (add, subtract, multiply, divide, remainder): "
+puts "Which operation would you like to perform today? \n(add, subtract, multiply, divide, remainder): "
 
 option = gets.chomp
 
@@ -30,8 +30,12 @@ if (option == "add")
     total = 0;
     while(number != "end")
         number = gets.chomp
-        total = add(total, number)
-    end;
+        if(number != '')
+            total = add(total, number)
+        else 
+            puts "You have chosen an empty string, try again. \n \n"
+        end
+    end
     30.times{ print "--" }
     puts "\n"
     print "Your total added = #{total} \n"
@@ -46,8 +50,12 @@ if (option == "subtract")
     total = 0;
     while(number != "end")
         number = gets.chomp
-        total = subtract(total, number)
-    end;
+        if(number != '')
+            total = subtract(number, total)
+        else 
+            puts "You have chosen an empty string, try again. \n \n"
+        end
+    end
     30.times{ print "--" }
     puts "\n"
     print "Your total subtracted = #{total} \n"
@@ -62,8 +70,12 @@ if (option == "multiply")
     total = 0;
     while(number != "end")
         number = gets.chomp
-        total = multiply(total, number)
-    end;
+        if(number != '')
+            total = multiply(total, number)
+        else 
+            puts "You have chosen an empty string, try again. \n \n"
+        end
+    end
     30.times{ print "--" }
     puts "\n"
     print "Your total multiplied = #{total} \n"
@@ -78,8 +90,12 @@ if (option == "divide")
     total = 0;
     while(number != "end")
         number = gets.chomp
-        total = divide(total, number)
-    end;
+        if(number != '')
+            total = divide(total, number)
+        else 
+            puts "You have chosen an empty string, try again. \n \n"
+        end
+    end
     30.times{ print "--" }
     puts "\n"
     print "Your total divided = #{total} \n"
@@ -94,8 +110,12 @@ if (option == "remainder")
     total = 0;
     while(number != "end")
         number = gets.chomp
-        total = mod(total, number)
-    end;
+        if(number != '')
+            total = mod(total, number)
+        else 
+            puts "You have chosen an empty string, try again. \n \n"
+        end
+    end
     30.times{ print "--" }
     puts "\n"
     print "Your total modded = #{total} \n"
