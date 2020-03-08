@@ -1,0 +1,1 @@
+Mastering data structures in Ruby — Singly linked lists: https://medium.com/amiralles/mastering-data-structures-in-ruby-linked-lists-708347a30360
