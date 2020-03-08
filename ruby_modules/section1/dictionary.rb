@@ -21,6 +21,10 @@ p onlye
 onlye = my_hash.each {|key, value| my_hash.delete(key) if value.include?("e")}
 p onlye
 
+symbol = :A;
+
+p symbol.toString()
+
 # Hashes - Text with directions, references and code
 # To create a hash called my_details include the elements within { }:
 
