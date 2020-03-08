@@ -13,15 +13,28 @@ dial_book = {
  
 # Get city names from the hash
 def get_city_names(somehash)
-# Write code here
+  somehash.each {|city| print "#{city[0]} \n"}
 end
  
 # Get area code based on given hash and key
 def get_area_code(somehash, key)
-# Write code here
+  somehash.each {|k,v| if (k == key) then return v end}
 end
  
 # Execution flow
+print "--"*20 + "\n"
 loop do
-# Write your program execution code here
+  get_city_names(dial_book)
+  print "--"*20 + "\n"
+  puts "Would you like the area code to a city? (Y,N)"
+  option = gets.chomp.downcase
+  if(option == 'y')
+    print "Which city would you like the area code to? "
+    city = gets.chomp.downcase
+    area = get_area_code(dial_book, city)
+    print "\nThe area code of #{city} is #{area} \n"
+    print "--"*20 + "\n"
+  else 
+    exit(true)
+  end
 end
