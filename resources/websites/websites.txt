@@ -1,1 +1,6 @@
 Mastering data structures in Ruby — Singly linked lists: https://medium.com/amiralles/mastering-data-structures-in-ruby-linked-lists-708347a30360
+
+Ruby Style Guide 1: https://github.com/rubocop-hq/ruby-style-guide
+
+Ruby Style Guide 2: https://github.com/bbatsov/ruby-style-guide
+
