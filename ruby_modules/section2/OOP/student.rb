@@ -1,3 +1,4 @@
+
 class Student
   attr_accessor :first_name, :last_name, :email, :username, :password
   def initialize(first_name, last_name, email, username, password)
@@ -13,7 +14,6 @@ class Student
     print "Last name = #{@last_name}\n"
     print "email = #{@email}\n"
     print "username = #{@username}\n"
-    print "password = #{@password}\n"
   end
 
 end
