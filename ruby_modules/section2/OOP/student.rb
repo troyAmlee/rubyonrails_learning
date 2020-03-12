@@ -20,7 +20,7 @@ end
 
 troy = Student.new('Troy',
                    'Amlee',
-                   'hb0390am@go.somestate.edu',
+                   'hb1391am@go.somestate.edu',
                    'Akicita_Sunka_Wakan_Ska',
                    'sgdnlgfdsjgdfngjnn35325245###')
 mike = Student.new('Mike',
